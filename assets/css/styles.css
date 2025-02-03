@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -32,4 +34,69 @@
       --text-color: #28292E;
       --link-color: #28292E;
       --icon-color: #56575A;
+  }
+
+  body {
+    background: var(--primary-bg-color);
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  i {
+    color: var(--icon-color);
+  }
+
+  .header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+
+  .header__brand .brand__logo {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+  
+  #toggleTheme {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: ease-in-out .4s;
+  }
+
+  .menu{
+    display: flex;
+    align-items: center;
+    background: var(--primary-bg-color);
+  }
+
+  .menu--mobile{
+    justify-content: space-between;
+  }
+
+  .menu--mobile .menu__link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .625rem;
+  }
+
+  .menu__icon, .menu__text {
+    color: var(--text-color);
+  }
+  
+  .menu__icon{
+    font-size: 1.5rem;
+  }
+
+  .menu__text{
+    font-size: .75rem;
+    text-transform: uppercase;
   }
