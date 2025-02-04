@@ -29,9 +29,9 @@
 	--icon-color: #56575A;
 }
 
-html[data-theme='light'] .brand__logo {
+/* html[data-theme='light'] .brand__logo {
   filter: invert(1);
-}
+} */
 
 html[data-theme='light'] .technologies__logo {
   filter: invert(80%);
