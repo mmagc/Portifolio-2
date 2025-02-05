@@ -2,7 +2,7 @@
     "itens": [{
     "sobre": {
       "titulo": "Sobre mim",
-      "descricao": "Matheus Gnann. Apaixonado por artes e tecnologia, meu primeiro \"Hello World\" foi na pré-adolescência quando tive contato com HTML, CSS e um pouco de JavaScript e Notepad++. Atualmente curso Analise e Desenvolvimento na Fatec-SP e trabalho como estagiário de Desenvolvimento no Senai Jandira.",
+      "descricao": "Matheus Gnann. Apaixonado por tecnologia, meu primeiro \"Hello World\" foi na pré-adolescência quando tive contato com HTML, CSS e um pouco de JavaScript e Notepad++. Atualmente curso Analise e Desenvolvimento na Fatec-SP e trabalho como estagiário de Desenvolvimento no Senai Jandira.",
       "idiomas": [
         {
           "idioma": "Inglês",
