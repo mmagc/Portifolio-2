@@ -91,8 +91,8 @@
               ]
             },
             {
-              "titulo": "Archstil Blog",
-              "descricao": "A história por trás dos Estilos Arquitetônicos",
+              "titulo": "Jokenpo Yu-Gi-Oh",
+              "descricao": "Jogo em Javascript de jokenpo com tema de Yu-Gi-Oh",
               "tecnologias": [
                 "Java",
                 "Node.js",
@@ -100,22 +100,22 @@
                 "Git"
               ],
               "funcionalidades": [
-                "Postagens relacionadas e em destaque",
-                "Filtragem por tags e categorias",
-                "Biografia do autor"
+                "Condição de jogo (Vitória | Derrota | Empate)",
+                "Video e audio background",
+                "Biblioteca de tema"
               ],
               "imagens": {
-                "capa": "assets/images/projects/archstil.jpg"
+                "capa": "./assets/images/jokenpo.png"
               },
               "botoes": [
                 {
                   "texto": "Prévia",
-                  "link": "#",
+                  "link": "https://yu-gi-ohjokenpo.vercel.app/",
                   "icone": "bi bi-arrow-up-right"
                 },
                 {
                   "texto": "Repositório",
-                  "link": "#",
+                  "link": "https://github.com/mmagc/Javascript-Yu-Gi-Oh",
                   "icone": ""
                 }
               ]

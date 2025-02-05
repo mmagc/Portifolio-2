@@ -104,7 +104,7 @@ fetch("./assets/dados.json").then((response) => {
             <h2>${dado.projetos.titulo}</h2>
             <div class="projects__container">
                 <div class="projects__card">
-                <img class="card__cover" src="${dado.projetos.itens[0].imagens.capa}" alt="Capa Josi's Box">
+                <img class="card__cover" src="${dado.projetos.itens[0].imagens.capa}" alt="Capa Website Multiverso">
                 <div class="card__body">
                     <h3 class="card__title">${dado.projetos.itens[0].titulo}</h3>
                     <p class="card__description">${dado.projetos.itens[0].descricao}</p>
@@ -144,14 +144,14 @@ fetch("./assets/dados.json").then((response) => {
                 </div>
                 </div>
                 <div class="projects__card card--reverse">
-                <img class="card__cover" src="assets/images/projects/archstil.jpg" alt="Capa Archstil">
+                <img class="card__cover" src="${dado.projetos.itens[1].imagens.capa}" alt="Capa Jokenpo Yu-Gi-Oh">
                 <div class="card__body">
-                    <h3 class="card__title">Archstil Blog</h3>
-                    <p class="card__description">A história por trás dos Estilos Arquitetônicos.</p>
+                    <h3 class="card__title">${dado.projetos.itens[1].titulo}</h3>
+                    <p class="card__description">${dado.projetos.itens[1].descricao}</p>
                     <ul class="card__list">
-                    <li class="card__item">Postagens relacionadas e em destaque;</li>
-                    <li class="card__item">Filtragem por tags e categorias;</li>
-                    <li class="card__item">Biografia do autor.</li>
+                    <li class="card__item">${dado.projetos.itens[1].funcionalidades[0]};</li>
+                    <li class="card__item">${dado.projetos.itens[1].funcionalidades[1]};</li>
+                    <li class="card__item">${dado.projetos.itens[1].funcionalidades[2]}.</li>
                     </ul>
                     <ul class="technologies__list">
                         <li class="technologies__item">
@@ -169,11 +169,16 @@ fetch("./assets/dados.json").then((response) => {
                     </ul>
                     <div class="card__buttons">
                     <button class="btn btn--primary">
-                        <span>Prévia</span>
-                        <i class="bi bi-arrow-up-right"></i>
-                    </button>  
+                        <a href="${dado.projetos.itens[1].botoes[0].link}" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right" style="margin-left: 8px;"></i>
+                        </a>
+                    </button>
+  
                     <button class="btn">
+                        <a href="${dado.projetos.itens[1].botoes[1].link}">
                         <span>Repositório</span>
+                        </a>
                     </button>  
                     </div>
                 </div>
@@ -204,11 +209,16 @@ fetch("./assets/dados.json").then((response) => {
                     </ul>
                     <div class="card__buttons">
                     <button class="btn btn--primary">
-                        <span>Prévia</span>
-                        <i class="bi bi-arrow-up-right"></i>
-                    </button>  
+                        <a href="${dado.projetos.itens[2].botoes[0].link}" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right" style="margin-left: 8px;"></i>
+                        </a>
+                    </button>
+  
                     <button class="btn">
+                        <a href="${dado.projetos.itens[2].botoes[1].link}">
                         <span>Repositório</span>
+                        </a>
                     </button>  
                     </div>
                 </div>
