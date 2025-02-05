@@ -34,14 +34,14 @@ document.addEventListener("DOMContentLoaded", initializeTheme);
 
 toggleTheme.addEventListener("click", changeTheme);
 
-accordionHeaders.forEach(header => {
-  header.addEventListener("click", () => {
-    const accordionItem = header.parentElement;
-    const accordionActive = accordionItem.classList.contains("active");
+// accordionHeaders.forEach(header => {
+//   header.addEventListener("click", () => {
+//     const accordionItem = header.parentElement;
+//     const accordionActive = accordionItem.classList.contains("active");
 
-    accordionActive ? accordionItem.classList.remove("active") : accordionItem.classList.add("active");
-  })
-})
+//     accordionActive ? accordionItem.classList.remove("active") : accordionItem.classList.add("active");
+//   })
+// })
 
 menuLinks.forEach(item => {
   item.addEventListener("click", () => {

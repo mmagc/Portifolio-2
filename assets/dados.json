@@ -63,11 +63,11 @@
             {
               "titulo": "Multiverso-Spider-Man",
               "descricao": "Website multiverso",
-              "tecnologias": [
-                "HTML",
-                "CSS",
-                "Javascript",
-                "Git"
+              "technologias": [
+                "assets/images/technologies/html5.svg",
+                "assets/images/technologies/css3.svg",
+                "assets/images/technologies/javascript.svg",
+                "assets/images/technologies/git.svg"
               ],
               "funcionalidades": [
                 "Carrossel de personagens",
@@ -93,11 +93,11 @@
             {
               "titulo": "Jokenpo Yu-Gi-Oh",
               "descricao": "Jogo em Javascript de jokenpo com tema de Yu-Gi-Oh",
-              "tecnologias": [
-                "Java",
-                "Node.js",
-                "React",
-                "Git"
+              "technologias": [
+                "assets/images/technologies/html5.svg",
+                "assets/images/technologies/css3.svg",
+                "assets/images/technologies/javascript.svg",
+                "assets/images/technologies/git.svg"
               ],
               "funcionalidades": [
                 "Condição de jogo (Vitória | Derrota | Empate)",
@@ -121,31 +121,31 @@
               ]
             },
             {
-              "titulo": "Games Store",
-              "descricao": "Loja online de Games",
-              "tecnologias": [
-                "Java",
-                "Node.js",
-                "React",
-                "Git"
+              "titulo": "Jogo Detona Ralph",
+              "descricao": "Jogo em Javascript de janela com tema de Detona Ralph",
+              "technologias": [
+                "assets/images/technologies/html5.svg",
+                "assets/images/technologies/css3.svg",
+                "assets/images/technologies/javascript.svg",
+                "assets/images/technologies/git.svg"
               ],
               "funcionalidades": [
-                "Listagem de favoritos",
-                "Carrinho de compras",
-                "Filtragem por preço e categoria"
+                "Listener de Clicks",
+                "Sistema de tempo e vida",
+                "Funcionalidade de Perda e contagem de acertos"
               ],
               "imagens": {
-                "capa": "assets/images/projects/games-store.jpg"
+                "capa": "assets/images/detona.png"
               },
               "botoes": [
                 {
                   "texto": "Prévia",
-                  "link": "#",
+                  "link": "https://detona-ralph-smash.vercel.app/",
                   "icone": "bi bi-arrow-up-right"
                 },
                 {
                   "texto": "Repositório",
-                  "link": "#",
+                  "link": "https://github.com/mmagc/detona-ralph-smash",
                   "icone": ""
                 }
               ]

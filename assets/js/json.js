@@ -2,6 +2,16 @@ let seção = document.querySelector("#sobre_mim")
 let seção2 = document.querySelector("#sobre_mim2") 
 let seção3 = document.querySelector("#projetos") 
 
+function setupAccordion() {
+  const accordionHeaders = document.querySelectorAll('.accordion__header');
+  accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      item.classList.toggle('active');
+    });
+  });
+}
+
 fetch("./assets/dados.json").then((response) => {
     response.json().then((dados) => {
         dados.itens.map((dado) => {
@@ -99,6 +109,7 @@ fetch("./assets/dados.json").then((response) => {
                 </p>
               </div>
             </div>`
+            setupAccordion();
 
             seção3.innerHTML += `
             <h2>${dado.projetos.titulo}</h2>
@@ -115,16 +126,16 @@ fetch("./assets/dados.json").then((response) => {
                     </ul>
                     <ul class="technologies__list">
                         <li class="technologies__item">
-                        <img class="technologies__logo" src="assets/images/technologies/java.svg" alt="Logo Javascript">
+                        <img class="technologies__logo" src="${dado.projetos.itens[0].technologias[0]}" alt="Logo Javascript">
                         </li>
                         <li class="technologies__item">
-                        <img class="technologies__logo" src="assets/images/technologies/nodejs.svg" alt="Logo Nodejs">
+                        <img class="technologies__logo" src="${dado.projetos.itens[0].technologias[1]}" alt="Logo Nodejs">
                         </li>
                         <li class="technologies__item">
-                        <img class="technologies__logo" src="assets/images/technologies/react.svg" alt="Logo React">
+                        <img class="technologies__logo" src="${dado.projetos.itens[0].technologias[2]}" alt="Logo React">
                         </li>
                         <li class="technologies__item">
-                        <img class="technologies__logo" src="assets/images/technologies/git.svg" alt="Logo Git">
+                        <img class="technologies__logo" src="${dado.projetos.itens[0].technologias[3]}" alt="Logo Git">
                         </li>
                     </ul>
                     <div class="card__buttons">
@@ -155,16 +166,16 @@ fetch("./assets/dados.json").then((response) => {
                     </ul>
                     <ul class="technologies__list">
                         <li class="technologies__item">
-                        <img class="technologies__logo" src="assets/images/technologies/java.svg" alt="Logo Javascript">
+                        <img class="technologies__logo" src="${dado.projetos.itens[1].technologias[0]}" alt="Logo Javascript">
                         </li>
                         <li class="technologies__item">
-                        <img class="technologies__logo" src="assets/images/technologies/nodejs.svg" alt="Logo Nodejs">
+                        <img class="technologies__logo" src="${dado.projetos.itens[1].technologias[1]}" alt="Logo Nodejs">
                         </li>
                         <li class="technologies__item">
-                        <img class="technologies__logo" src="assets/images/technologies/react.svg" alt="Logo React">
+                        <img class="technologies__logo" src="${dado.projetos.itens[1].technologias[2]}" alt="Logo React">
                         </li>
                         <li class="technologies__item">
-                        <img class="technologies__logo" src="assets/images/technologies/git.svg" alt="Logo Git">
+                        <img class="technologies__logo" src="${dado.projetos.itens[1].technologias[3]}" alt="Logo Git">
                         </li>
                     </ul>
                     <div class="card__buttons">
@@ -184,27 +195,27 @@ fetch("./assets/dados.json").then((response) => {
                 </div>
                 </div>
                 <div class="projects__card">
-                <img class="card__cover" src="assets/images/projects/games-store.jpg" alt="Capa Games Store">
+                <img class="card__cover" src="${dado.projetos.itens[2].imagens.capa}" alt="Capa Games Store">
                 <div class="card__body">
-                    <h3 class="card__title">Games Store</h3>
-                    <p class="card__description">Loja online de Games.</p>
+                    <h3 class="card__title">${dado.projetos.itens[2].titulo}</h3>
+                    <p class="card__description">${dado.projetos.itens[2].descricao}</p>
                     <ul class="card__list">
-                    <li class="card__item">Listagem de favoritos;</li>
-                    <li class="card__item">Carrinho de compras;</li>
-                    <li class="card__item">Filtragem por preço e categoria.</li>
+                    <li class="card__item">${dado.projetos.itens[2].funcionalidades[0]};</li>
+                    <li class="card__item">${dado.projetos.itens[2].funcionalidades[1]};</li>
+                    <li class="card__item">${dado.projetos.itens[2].funcionalidades[2]}.</li>
                     </ul>
                     <ul class="technologies__list">
                         <li class="technologies__item">
-                        <img class="technologies__logo" src="assets/images/technologies/java.svg" alt="Logo Javascript">
+                        <img class="technologies__logo" src="${dado.projetos.itens[2].technologias[0]}" alt="Logo Javascript">
                         </li>
                         <li class="technologies__item">
-                        <img class="technologies__logo" src="assets/images/technologies/nodejs.svg" alt="Logo Nodejs">
+                        <img class="technologies__logo" src="${dado.projetos.itens[2].technologias[1]}" alt="Logo Nodejs">
                         </li>
                         <li class="technologies__item">
-                        <img class="technologies__logo" src="assets/images/technologies/react.svg" alt="Logo React">
+                        <img class="technologies__logo" src="${dado.projetos.itens[2].technologias[2]}" alt="Logo React">
                         </li>
                         <li class="technologies__item">
-                        <img class="technologies__logo" src="assets/images/technologies/git.svg" alt="Logo Git">
+                        <img class="technologies__logo" src="${dado.projetos.itens[2].technologias[3]}" alt="Logo Git">
                         </li>
                     </ul>
                     <div class="card__buttons">
