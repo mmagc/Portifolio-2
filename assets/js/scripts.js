@@ -5,12 +5,32 @@ const menuLinks = document.querySelectorAll(".menu__link");
 
 function changeTheme(){
   const currentTheme = rootHtml.getAttribute("data-theme");
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
 
-  currentTheme === "dark" ? rootHtml.setAttribute("data-theme", "light") : rootHtml.setAttribute("data-theme", "dark")
+  rootHtml.setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
 
-  toggleTheme.classList.toggle("bi-sun")
-  toggleTheme.classList.toggle("bi-moon-stars")
+  toggleTheme.classList.toggle("bi-sun");
+  toggleTheme.classList.toggle("bi-moon-stars");
 }
+
+function initializeTheme() {
+    const rootHtml = document.documentElement;
+    const toggleTheme = document.getElementById('theme-toggle');
+
+    const savedTheme = localStorage.getItem("theme") || "dark";
+    rootHtml.setAttribute("data-theme", savedTheme);
+
+    if (savedTheme === "dark") {
+        toggleTheme.classList.add("bi-moon-stars");
+        toggleTheme.classList.remove("bi-sun");
+    } else {
+        toggleTheme.classList.add("bi-sun");
+        toggleTheme.classList.remove("bi-moon-stars");
+    }
+}
+
+document.addEventListener("DOMContentLoaded", initializeTheme);
 
 toggleTheme.addEventListener("click", changeTheme);
 
