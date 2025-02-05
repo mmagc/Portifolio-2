@@ -1,5 +1,6 @@
 let seção = document.querySelector("#sobre_mim")
 let seção2 = document.querySelector("#sobre_mim2") 
+let seção3 = document.querySelector("#projetos") 
 
 fetch("./assets/dados.json").then((response) => {
     response.json().then((dados) => {
@@ -98,6 +99,128 @@ fetch("./assets/dados.json").then((response) => {
                 </p>
               </div>
             </div>`
+
+            seção3.innerHTML += `
+            <h2>${dado.projetos.titulo}</h2>
+            <div class="projects__container">
+                <div class="projects__card">
+                <img class="card__cover" src="${dado.projetos.itens[0].imagens.capa}" alt="Capa Josi's Box">
+                <div class="card__body">
+                    <h3 class="card__title">${dado.projetos.itens[0].titulo}</h3>
+                    <p class="card__description">${dado.projetos.itens[0].descricao}</p>
+                    <ul class="card__list">
+                    <li class="card__item">${dado.projetos.itens[0].funcionalidades[0]};</li>
+                    <li class="card__item">${dado.projetos.itens[0].funcionalidades[1]};</li>
+                    <li class="card__item">${dado.projetos.itens[0].funcionalidades[2]}.</li>
+                    </ul>
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                        <img class="technologies__logo" src="assets/images/technologies/java.svg" alt="Logo Javascript">
+                        </li>
+                        <li class="technologies__item">
+                        <img class="technologies__logo" src="assets/images/technologies/nodejs.svg" alt="Logo Nodejs">
+                        </li>
+                        <li class="technologies__item">
+                        <img class="technologies__logo" src="assets/images/technologies/react.svg" alt="Logo React">
+                        </li>
+                        <li class="technologies__item">
+                        <img class="technologies__logo" src="assets/images/technologies/git.svg" alt="Logo Git">
+                        </li>
+                    </ul>
+                    <div class="card__buttons">
+                    <button class="btn btn--primary">
+                        <a href="${dado.projetos.itens[0].botoes[0].link}" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right" style="margin-left: 8px;"></i>
+                        </a>
+                    </button>
+  
+                    <button class="btn">
+                        <a href="${dado.projetos.itens[0].botoes[1].link}">
+                        <span>Repositório</span>
+                        </a>
+                    </button>  
+                    </div>
+                </div>
+                </div>
+                <div class="projects__card card--reverse">
+                <img class="card__cover" src="assets/images/projects/archstil.jpg" alt="Capa Archstil">
+                <div class="card__body">
+                    <h3 class="card__title">Archstil Blog</h3>
+                    <p class="card__description">A história por trás dos Estilos Arquitetônicos.</p>
+                    <ul class="card__list">
+                    <li class="card__item">Postagens relacionadas e em destaque;</li>
+                    <li class="card__item">Filtragem por tags e categorias;</li>
+                    <li class="card__item">Biografia do autor.</li>
+                    </ul>
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                        <img class="technologies__logo" src="assets/images/technologies/java.svg" alt="Logo Javascript">
+                        </li>
+                        <li class="technologies__item">
+                        <img class="technologies__logo" src="assets/images/technologies/nodejs.svg" alt="Logo Nodejs">
+                        </li>
+                        <li class="technologies__item">
+                        <img class="technologies__logo" src="assets/images/technologies/react.svg" alt="Logo React">
+                        </li>
+                        <li class="technologies__item">
+                        <img class="technologies__logo" src="assets/images/technologies/git.svg" alt="Logo Git">
+                        </li>
+                    </ul>
+                    <div class="card__buttons">
+                    <button class="btn btn--primary">
+                        <span>Prévia</span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>  
+                    <button class="btn">
+                        <span>Repositório</span>
+                    </button>  
+                    </div>
+                </div>
+                </div>
+                <div class="projects__card">
+                <img class="card__cover" src="assets/images/projects/games-store.jpg" alt="Capa Games Store">
+                <div class="card__body">
+                    <h3 class="card__title">Games Store</h3>
+                    <p class="card__description">Loja online de Games.</p>
+                    <ul class="card__list">
+                    <li class="card__item">Listagem de favoritos;</li>
+                    <li class="card__item">Carrinho de compras;</li>
+                    <li class="card__item">Filtragem por preço e categoria.</li>
+                    </ul>
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                        <img class="technologies__logo" src="assets/images/technologies/java.svg" alt="Logo Javascript">
+                        </li>
+                        <li class="technologies__item">
+                        <img class="technologies__logo" src="assets/images/technologies/nodejs.svg" alt="Logo Nodejs">
+                        </li>
+                        <li class="technologies__item">
+                        <img class="technologies__logo" src="assets/images/technologies/react.svg" alt="Logo React">
+                        </li>
+                        <li class="technologies__item">
+                        <img class="technologies__logo" src="assets/images/technologies/git.svg" alt="Logo Git">
+                        </li>
+                    </ul>
+                    <div class="card__buttons">
+                    <button class="btn btn--primary">
+                        <span>Prévia</span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>  
+                    <button class="btn">
+                        <span>Repositório</span>
+                    </button>  
+                    </div>
+                </div>
+                </div>
+                <a href="https://github.com/mmagc">
+                <button class="btn btn--primary">
+                    <span>Ver Todos os Projetos</span>
+                    <i class="bi bi-arrow-up-right"></i>
+                </button>  
+                </a>
+            </div>`
+
         })
 
     })

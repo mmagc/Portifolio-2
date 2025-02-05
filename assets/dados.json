@@ -1,61 +1,163 @@
 {
-    "itens": [{
-    "sobre": {
-      "titulo": "Sobre mim",
-      "descricao": "Matheus Gnann. Apaixonado por tecnologia, meu primeiro \"Hello World\" foi na pré-adolescência quando tive contato com HTML, CSS e um pouco de JavaScript e Notepad++. Atualmente curso Analise e Desenvolvimento na Fatec-SP e trabalho como estagiário de Desenvolvimento no Senai Jandira.",
-      "idiomas": [
-        {
-          "idioma": "Inglês",
-          "nivel": "Fluente"
+    "itens": [
+      {
+        "sobre": {
+          "titulo": "Sobre mim",
+          "descricao": "Matheus Gnann. Apaixonado por tecnologia, meu primeiro \"Hello World\" foi na pré-adolescência quando tive contato com HTML, CSS e um pouco de JavaScript e Notepad++. Atualmente curso Analise e Desenvolvimento na Fatec-SP e trabalho como estagiário de Desenvolvimento no Senai Jandira.",
+          "idiomas": [
+            {
+              "idioma": "Inglês",
+              "nivel": "Fluente"
+            },
+            {
+              "idioma": "Espanhol",
+              "nivel": "Básico"
+            }
+          ],
+          "foto": "assets/images/Imagem do WhatsApp de 2025-02-03 à(s) 17.01.23_f6603be7.jpg"
         },
-        {
-          "idioma": "Espanhol",
-          "nivel": "Básico"
+        "experiencia": [
+          {
+            "cargo": "Estagiário",
+            "empresa": "Senai Jandira",
+            "periodo": "Dez 2024 - Atualmente",
+            "descricao": "Atualmente, sou responsável pelo desenvolvimento de websites e e-commerces em WordPress para pequenas e microempresas. Além disso, participo ativamente de reuniões de alinhamento com os clientes, garantindo que suas necessidades e expectativas sejam atendidas de forma eficiente.",
+            "atividades": [
+              "Elaboração de ementas",
+              "Ministração de aulas assíncronas",
+              "Produção de materiais complementares"
+            ]
+          }
+        ],
+        "formacao": [
+          {
+            "curso": "Analise e Desenvolvimento de Sistemas",
+            "instituicao": "Fatec-SP",
+            "periodo": "Ago 2024 - Atualmente",
+            "tipo": "Técnologo"
+          }
+        ],
+        "cursos": [
+          {
+            "nome": "Versionamento de Código com Git e GitHub",
+            "instituicao": "Digital Innovation One",
+            "periodo": "Fev 2023. 2h",
+            "descricao": "O que é versionamento de código, Git e GitHub. Como instalar e configurar o Git em diferentes sistemas operacionais e como autenticar via Token e SSH. Como manusear repositórios, indo desde a criação e clonagem até o gerenciamento de branches, passando por todas as etapas de salvar, desfazer e sincronizar alterações com o repositório remoto."
+          },
+          {
+            "nome": "Contribuindo em um Projeto Open Source no GitHub",
+            "instituicao": "Digital Innovation One",
+            "periodo": "Fev 2023. 1h",
+            "descricao": "Lab prático sobre colaboração em projetos de código aberto."
+          },
+          {
+            "nome": "Organizando seus Estudos com os Roadmaps DIO e o Notion",
+            "instituicao": "Digital Innovation One",
+            "periodo": "Fev 2023. 2h",
+            "descricao": "Otimização dos estudos com os Roadmaps DIO, construindo um caderno de estudos com a ferramenta Notion."
+          }
+        ],
+        "projetos": {
+          "titulo": "Projetos",
+          "itens": [
+            {
+              "titulo": "Multiverso-Spider-Man",
+              "descricao": "Website multiverso",
+              "tecnologias": [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "Git"
+              ],
+              "funcionalidades": [
+                "Carrossel de personagens",
+                "Pagina de cada super herói",
+                "Galeria de imagens"
+              ],
+              "imagens": {
+                "capa": "./assets/images/multiverso.png"
+              },
+              "botoes": [
+                {
+                  "texto": "Prévia",
+                  "link": "https://multiverso-spider-man-mu.vercel.app/",
+                  "icone": "bi bi-arrow-up-right"
+                },
+                {
+                  "texto": "Repositório",
+                  "link": "https://github.com/mmagc/Multiverso-Spider-Man",
+                  "icone": ""
+                }
+              ]
+            },
+            {
+              "titulo": "Archstil Blog",
+              "descricao": "A história por trás dos Estilos Arquitetônicos",
+              "tecnologias": [
+                "Java",
+                "Node.js",
+                "React",
+                "Git"
+              ],
+              "funcionalidades": [
+                "Postagens relacionadas e em destaque",
+                "Filtragem por tags e categorias",
+                "Biografia do autor"
+              ],
+              "imagens": {
+                "capa": "assets/images/projects/archstil.jpg"
+              },
+              "botoes": [
+                {
+                  "texto": "Prévia",
+                  "link": "#",
+                  "icone": "bi bi-arrow-up-right"
+                },
+                {
+                  "texto": "Repositório",
+                  "link": "#",
+                  "icone": ""
+                }
+              ]
+            },
+            {
+              "titulo": "Games Store",
+              "descricao": "Loja online de Games",
+              "tecnologias": [
+                "Java",
+                "Node.js",
+                "React",
+                "Git"
+              ],
+              "funcionalidades": [
+                "Listagem de favoritos",
+                "Carrinho de compras",
+                "Filtragem por preço e categoria"
+              ],
+              "imagens": {
+                "capa": "assets/images/projects/games-store.jpg"
+              },
+              "botoes": [
+                {
+                  "texto": "Prévia",
+                  "link": "#",
+                  "icone": "bi bi-arrow-up-right"
+                },
+                {
+                  "texto": "Repositório",
+                  "link": "#",
+                  "icone": ""
+                }
+              ]
+            }
+          ],
+          "link_ver_todos": {
+            "texto": "Ver Todos os Projetos",
+            "link": "https://github.com/mmagc",
+            "icone": "bi bi-arrow-up-right"
+          }
         }
-      ],
-      "foto": "assets/images/Imagem do WhatsApp de 2025-02-03 à(s) 17.01.23_f6603be7.jpg"
-    },
-    "experiencia": [
-      {
-        "cargo": "Estagiário",
-        "empresa": "Senai Jandira",
-        "periodo": "Dez 2024 - Atualmente",
-        "descricao": "Atualmente, sou responsável pelo desenvolvimento de websites e e-commerces em WordPress para pequenas e microempresas. Além disso, participo ativamente de reuniões de alinhamento com os clientes, garantindo que suas necessidades e expectativas sejam atendidas de forma eficiente.",
-        "atividades": [
-          "Elaboração de ementas",
-          "Ministração de aulas assíncronas",
-          "Produção de materiais complementares"
-        ]
-      }
-    ],
-    "formacao": [
-      {
-        "curso": "Analise e Desenvolvimento de Sistemas",
-        "instituicao": "Fatec-SP",
-        "periodo": "Ago 2024 - Atualmente",
-        "tipo": "Técnologo"
-      }
-    ],
-    "cursos": [
-      {
-        "nome": "Versionamento de Código com Git e GitHub",
-        "instituicao": "Digital Innovation One",
-        "periodo": "Fev 2023. 2h",
-        "descricao": "O que é versionamento de código, Git e GitHub. Como instalar e configurar o Git em diferentes sistemas operacionais e como autenticar via Token e SSH. Como manusear repositórios, indo desde a criação e clonagem até o gerenciamento de branches, passando por todas as etapas de salvar, desfazer e sincronizar alterações com o repositório remoto."
-      },
-      {
-        "nome": "Contribuindo em um Projeto Open Source no GitHub",
-        "instituicao": "Digital Innovation One",
-        "periodo": "Fev 2023. 1h",
-        "descricao": "Lab prático sobre colaboração em projetos de código aberto."
-      },
-      {
-        "nome": "Organizando seus Estudos com os Roadmaps DIO e o Notion",
-        "instituicao": "Digital Innovation One",
-        "periodo": "Fev 2023. 2h",
-        "descricao": "Otimização dos estudos com os Roadmaps DIO, construindo um caderno de estudos com a ferramenta Notion."
       }
     ]
-}]
   }
   
