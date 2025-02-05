@@ -39,22 +39,22 @@
         ],
         "cursos": [
           {
-            "nome": "Versionamento de Código com Git e GitHub",
+            "nome": "Ri Happy - Front-end do Zero",
             "instituicao": "Digital Innovation One",
-            "periodo": "Fev 2023. 2h",
-            "descricao": "O que é versionamento de código, Git e GitHub. Como instalar e configurar o Git em diferentes sistemas operacionais e como autenticar via Token e SSH. Como manusear repositórios, indo desde a criação e clonagem até o gerenciamento de branches, passando por todas as etapas de salvar, desfazer e sincronizar alterações com o repositório remoto."
+            "periodo": "Out 2024. 75h",
+            "descricao": "Bootcamp de aprofundamento em HTML, CSS e Javascript com foco em projetos e aperfeiçoamento das linguagens"
           },
           {
-            "nome": "Contribuindo em um Projeto Open Source no GitHub",
+            "nome": "Fundamento Javascript",
             "instituicao": "Digital Innovation One",
-            "periodo": "Fev 2023. 1h",
-            "descricao": "Lab prático sobre colaboração em projetos de código aberto."
+            "periodo": "Jun 202. 75h",
+            "descricao": "Curso sobre Javascript e testes praticos"
           },
           {
-            "nome": "Organizando seus Estudos com os Roadmaps DIO e o Notion",
-            "instituicao": "Digital Innovation One",
-            "periodo": "Fev 2023. 2h",
-            "descricao": "Otimização dos estudos com os Roadmaps DIO, construindo um caderno de estudos com a ferramenta Notion."
+            "nome": "Inglês B2",
+            "instituicao": "CNA idiomas",
+            "periodo": "Dez 2023. 5 anos",
+            "descricao": "Curso de Ingles com certificado de Cambridge"
           }
         ],
         "projetos": {
